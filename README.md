@@ -5,10 +5,12 @@ This data cleaning project use world-layoffs dataset. Project involves cleaning 
     Select * 
     From CleaningProject..layoffs
 
--- 1. Remove Duplicate
--- 2. Standardize Value
--- 3. Null Values or Blank Values
--- 4. Remove any columns
+-- Here are the steps
+
+	1. Remove Duplicate
+	2. Standardize Value
+	3. Null Values or Blank Values
+	4. Remove any columns
 
 -- Create staging data table for backup or original references
 
@@ -20,6 +22,7 @@ This data cleaning project use world-layoffs dataset. Project involves cleaning 
     From layoffs_staging
 
 -- 1. Working with duplicate row
+
 	-- This query use to get the row number to count the number of occurrences of rows with the same value
  
 		Select *,
@@ -61,6 +64,7 @@ This data cleaning project use world-layoffs dataset. Project involves cleaning 
 		WHERE row_num > 1
 
 -- 2. Standardizing Data
+
 	-- 2.1. Trimming
  
 		SELECT company, TRIM(company)
@@ -133,6 +137,7 @@ This data cleaning project use world-layoffs dataset. Project involves cleaning 
 		ALTER COLUMN date date
 
 -- 3. Working with NULL
+
 	-- 3.1. Populating NULL from industry column
  
 		SELECT 
