@@ -1,0 +1,17 @@
+Dashboard Overview National Railway Performance Analysis
+
+This project from Maven Analytics Challange. Dataset use from railway UK national data. 
+The goal is to create an exploratory dashboard that help:
+-  Identify the most popular routes
+-  Determine peak travel times
+-  Analyze revenue from different ticket types and classes
+-   Diagnoze on-time performance and contributng factors
+
+
+About The Data Set
+
+The darta contains mock train ticket sales for National Rail in the UK, from January to April 2024, including details on the type of ticket, the date & time for each journey, the departure & arrival stations, the ticket price, and more.
+  File type                     : CSV
+  Row record                    : 31653
+  Data structure                : Single Table
+  Field                         : 18
